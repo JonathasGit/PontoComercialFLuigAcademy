@@ -12,7 +12,7 @@
 	<div class="fluig-style-guide">
 		<form name="form" role="form">
 			<div class="row">
-				<div class="form-group col-md-6" >
+				<div class="form-group col-md-6">
 					<label for="nome">Nome</label>
 					<input type="text" name="nome" id="nome" class="form-control">
 				</div>
@@ -32,14 +32,39 @@
 					<label for="DocIdentidade">Documento de Identidade</label>
 					<input type="text" name="DocIdentidade" id="DocIdentidade" class="form-control">
 				</div>
-			
+
 				<div class="form-group col-md-2">
 					<label for="dataNascimento">Data de Nascimento</label>
 					<input type="text" name="dataNascimento" id="dataNascimento" class="form-control">
 				</div>
-				
-
 			</div>
+
+			<div class="row">
+				<div class="form-group col-md-2">
+					<label for="tipoPonto">Tipo do Ponto</label>
+					<div class="radio">
+						<label><input type="radio" name="tipoPonto" id="tipoPonto" value="quisque">Quiosque</label>
+						<label><input type="radio" name="tipoPonto" id="tipoPonto" value="loja">Loja</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group col-md-4">
+				<label>Dias de Funcionamento</label>
+				
+				<div class="checkbox">
+				<label><input type="checkbox" name="domingo">Dom</label>
+				<label><input type="checkbox" name="segunda">Seg</label>
+				<label><input type="checkbox" name="terca">Ter</label>
+				<label><input type="checkbox" name="quarta">Qua</label>
+				<label><input type="checkbox" name="quinta">Qui</label>
+				<label><input type="checkbox" name="sexta">Sex</label>
+				<label><input type="checkbox" name="sabado">Sab</label>
+				</div>				
+			</div>
+
+
+
 
 		</form>
 	</div>
@@ -47,4 +72,5 @@
 <script type="text/javascript">
 	var calendarioDataNascimento = FLUIGC.calendar('#dataNascimento');
 </script>
+
 </html>
